@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body,html
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+*
+{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+#navbar
+{
+    width: 100%;
+    height: 10vh;
+    background-color: #be3144;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+#navbar a
+{
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+    margin: 1%;
+    color:white;
+    text-decoration: none;
+    font-size: larger;
+}
+#navbar a:hover
+{
+    background-color: #45567d;
+}
+#welcome-section
+{
+    background-color: #333;
+    color:white;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+#welcome-section h1
+{
+    margin: 0;
+}
+
+#projects
+{
+    background-color: #45567d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-title
+{
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+.project-title h1
+{
+    width: fit-content;
+    color:white;
+    border-bottom: 2px solid white;
+    font-size: xx-large;
+}
+.project-tile
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project-tiles
+{
+    width: 30%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.project-tiles img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.project-tiles a
+{
+    text-decoration: none;
+    background-color: #333;
+    color:white;
+    padding:2%;
+    text-align: center;
+    font-size: x-large;
+}
+.project-tiles:hover
+{
+    transform: scale(1.02);
+}
+
+#Contact
+{
+    background-color: #303841;
+    color: white;
+    width: 100%;
+    height:75vh;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+#Contact h1
+{
+    font-size: xxx-large;
+}
+.Contact-icons
+{
+    width: 75%;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Contact-icons a
+{
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+
+@media (max-width:768px)
+{
+    .Contact-icons
+    {
+        flex-direction: column;
+    }
+    .project-tile
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-tiles
+    {
+        width: 90%;
+    }   
+
+}
